@@ -15,6 +15,7 @@ Math-Club
 ### teletext
 Courses
 ## Implementation
+Implementing the web app to http://github.com/greatsilas23/myPortfolio.git 
 ```bash 
   git add .
    git commit -m "First commit"
@@ -23,8 +24,9 @@ Courses
    git push -u origin main
 ```
 ## Maintenance
-## Debugging
-##Testing
-## Security
+Maintenance entails version control, testing and debugging
+Version control entails incorporating design improvements into the web app
+Testing entails logical comparison of data reports and security loopholes
+
 ##Spoof
 ##DDOS

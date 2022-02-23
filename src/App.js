@@ -4,17 +4,40 @@ import './App.css';
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+    return(
+        <div>
+           <header>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+           </header>
+           <aside>
+                <table>
+                    <tr>
+                        <td>USERS</td>
+                     </tr>
+                </table>
+            </aside>
+            <section>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="http://youtube.com/watch?v=rCiBgLOcuKU">LINK</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://youtube.com/watch?v=OVT30pKPRuw">HOVER</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://instagram.com/direct/inbox">ACTIVE</a>
+                        </td>
+                    </tr>
+                </table>
+            </section>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+    )
   }
 }
 
