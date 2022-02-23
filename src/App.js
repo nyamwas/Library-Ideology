@@ -6,36 +6,29 @@ class App extends Component {
   render() {
     return(
         <div>
-           <header>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-           </header>
-           <aside>
-                <table>
-                    <tr>
-                        <td>USERS</td>
-                     </tr>
-                </table>
-            </aside>
-            <section>
-                <table>
-                    <tr>
-                        <td>
-                            <a href="http://youtube.com/watch?v=rCiBgLOcuKU">LINK</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="http://youtube.com/watch?v=OVT30pKPRuw">HOVER</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="http://instagram.com/direct/inbox">ACTIVE</a>
-                        </td>
-                    </tr>
-                </table>
-            </section>
+           <table>
+                <tr>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>1</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>1</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                </tr>
         </div>
     )
   }
