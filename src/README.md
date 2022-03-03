@@ -2,7 +2,7 @@
 ## Planning
 Within the planning phase go/no-go decision, staffing requirements and system request is detailed
 ## Analysis
-Within the analysis phase system request, feasibility analysis and balance sheet are detailed
+Within the analysis phase system specification, feasibility analysis and balance sheet are detailed
 ## Design
 Within the design phase client and server design are detailed
 ## Implementation
