@@ -1,13 +1,13 @@
 import React from 'react'
 import Username from './res/Username.jpg'
-import Password from './res/Password.jpg'
-const LoginComponent = (props) => {
+import Age from './res/Age.jpg'
+const RegisterComponent = (props) => {
     return(
         <div
-            style={props.loginComponent}
+            style={props.registerComponent}
         >
             <h2
-                style={props.loginComponent.form.heading}
+                style={props.registerComponent.form.heading}
             >
                 {props.content}
             </h2>
@@ -18,38 +18,37 @@ const LoginComponent = (props) => {
                 <center>
                     <img
                         src={Username}
-                        style={props.loginComponent.form.username.icon}
+                        style={props.registerComponent.form.username.icon}
                         alt="username"
                     />
                     <br/>
                     <input
-                        style={props.loginComponent.form.username}
+                        style={props.registerComponent.form.username}
                         id="userName"
                         type="text"
-                        placeholder={props.placeholder.username}
+                        placeholder="user001"
                     />
                     <br/>
                     <img
-                        src={Password}
-                        style={props.loginComponent.form.password.icon}
-                        alt="password"
+                        src={Age}
+                        style={props.registerComponent.form.age.icon}
+                        alt="age"
                     />
                     <br/>
                     <input
-                        style={props.loginComponent.form.password}
-                        id="userPass"
-                        type="password"
-                        placeholder={props.placeholder.password}
+                        style={props.registerComponent.form.age}
+                        id="userAge"
+                        type="date"
                     />
                     <br/>
-                    <br />
+                    <br/>
                     <input
-                        style={props.loginComponent.form.submit}
+                        style={props.registerComponent.form.submit}
                         type="submit"
-                        value="Login"
+                        value="Register"
                     />
                     <input
-                        style={props.loginComponent.form.clear}
+                        style={props.registerComponent.form.clear}
                         type="reset"
                         value="Clear"
                     />
@@ -59,4 +58,4 @@ const LoginComponent = (props) => {
         </div>
     )
 }
-export default LoginComponent
+export default RegisterComponent
