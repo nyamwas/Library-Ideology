@@ -13,7 +13,7 @@ const LoginComponent = (props) => {
             </h2>
             <form
                 method="POST"
-                action="/form-registration"
+                action="http://localhost:3000/login-form"
             >
                 <center>
                     <img
@@ -25,6 +25,7 @@ const LoginComponent = (props) => {
                     <input
                         style={props.loginComponent.form.username}
                         id="userName"
+			name="userName"
                         type="text"
                         placeholder={props.placeholder.username}
                     />
@@ -38,6 +39,7 @@ const LoginComponent = (props) => {
                     <input
                         style={props.loginComponent.form.password}
                         id="userPass"
+			name="userPass"
                         type="password"
                         placeholder={props.placeholder.password}
                     />

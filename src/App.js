@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import LoginComponent from './LoginComponent.js'
 import RegisterComponent from './RegisterComponent.js'
+import FirstAidForm from './FirstAidForm.js'
 import myStyles from './myStyles.js'
 
 class App extends Component {
     constructor(props){
         super(props)
         this.state = {
-            showLogin: false,
-            login: {
+            showLogin: true,
+	    login: {
                 attr: myStyles.login,
                 content: 'Login',
                 placeholder: {
@@ -16,7 +17,7 @@ class App extends Component {
                     username: "user001"
                 }
             },
-            showRegister: true,
+            showRegister: false,
             register: {
                 attr: myStyles.register,
                 content: 'Register',
@@ -25,7 +26,7 @@ class App extends Component {
         }
     }
 
-    showHiddenLogin = () => {
+    showHiddenLogin = (event) => {
         if(!this.state.showLogin){
             this.setState({
                 showLogin: true
@@ -33,6 +34,10 @@ class App extends Component {
             this.setState({
                 showRegister: false
             })
+	        event.currentTarget.style.backgroundColor = 'white'
+	        event.currentTarget.style.color = 'yellow'
+	        event.currentTarget.parentElement.childNodes[1].style.backgroundColor = 'yellow'
+	        event.currentTarget.parentElement.childNodes[1].style.color = 'white'
         }else{
             this.setState({
                 showLogin: false
@@ -40,40 +45,19 @@ class App extends Component {
             this.setState({
                 showRegister: true
             })
+	        event.currentTarget.style.backgroundColor = 'white'
+	        event.currentTarget.style.color = 'yellow'
+	        event.currentTarget.parentElement.childNodes[0].style.backgroundColor = 'yellow'
+            event.currentTarget.parentElement.childNodes[0].style.color = 'white'
         }
     }
+
     render() {
         return(
             <div style={myStyles.root}>
-                <center>
-                    <button
-                        onClick={this.showHiddenLogin}
-                        style={myStyles.tablinks.login}
-                    >
-                        {this.state.login.content}
-                    </button>
-                    <button
-                        onClick={this.showHiddenLogin}
-                        style={myStyles.tablinks.register}
-                    >
-                        {this.state.register.content}
-                    </button>
-                </center>
-                {
-                    this.state.showLogin &&
-                    <LoginComponent
-                        loginComponent={this.state.login.attr}
-                        content={this.state.login.content}
-                        placeholder={this.state.login.placeholder}
-                    />
-                }
-                {
-                    this.state.showRegister &&
-                    <RegisterComponent
-                        registerComponent={this.state.register.attr}
-                        content={this.state.register.content}
-                    />
-                }
+		        <DatabaseComponent
+
+		        />
             </div>
         )
     }
