@@ -1,8 +1,0 @@
-Date created:  
-Date modified: 23 Sep, 2021
-
-Arrange the files you downloaded from Magari_react_version.zip as follows:
-i. write npx create-react-app my-app in terminal
-ii. from  Magari_react_version replace all the files in my-app/src/
-iii. The parent element in App.js is App and this should not cause any problems
-iv. Run npm start to see webpage
