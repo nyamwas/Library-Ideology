@@ -1,0 +1,18 @@
+.container
+{
+  width: 80vw;
+  height: 20vh;
+  background-color: #96cc39;
+  border-radius: 2vw;
+}
+.card
+{
+  width: 70vw; 
+
+  height: 30vh;
+  box-shadow: 2vw 2vw 2vw rgba(0,0,0,0.5);
+  background-color: #c0ec83;
+  border-radius: 2vw;
+}
+
+
