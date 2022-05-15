@@ -1,4 +1,4 @@
-# fruit-inventory-app
+# health-inventory-app
 ## Goals
 <ol>
     <li>Offer health information</li>
