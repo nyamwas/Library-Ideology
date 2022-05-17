@@ -12,8 +12,23 @@ const client = new Client({
 
 })
 
+app.post('/billing ', (req, res) =>{
+  let qty=req.body.qty
+  let price = 100
+  client.query(`INSERT INTO billing ( qty, price) VALUES ('${qty}', '${price}')`) 
+  client.query(`SELECT * FROM billing`, (err, result, fields) => {
+    if (err) throw err
+    console.log(result.rows) 
 
 
+
+  })
+
+
+
+
+  res.sendStatus(204)
+})
 app.post('/register', (req, res) => {
   let userName = req.body.userName
   let userPass = req.body.userPass

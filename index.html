@@ -1,23 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./resources/logo.jpg "/>
+
   <title>health-invenroty-app</title>
 </head>
 <body>
   <div class="container">
-    <section class="item-container">
+   
+
+
+
+   <img src="./resources/logo.jpg" width="40" height="40" alt="logo"/>
+   <br>
+   <br />
+
+   <section class="navigation">
+     
+
+     <a href="index.html">Home</a>
+     <a href="checkout.html">Checkout</a>
+     <a href="billing.html">Billing</a>
+   </section>
+ 
+
+
+     <section class="blur">  
+
+
+       <section class="menu hide">
+
+         <img src="./resources/vegetables.png" width="40" height="40" alt="vegetables" />
+
+        
+
+
+
+         <h2>Vegetables</h2>  
+     
+        <form action="http://localhost:4000/checkout" method="post">
+
+          <img src="logo.png" alt="logo" height="50" width="50" /> 
+
+
+          <hr
+
+          <input type="number" value="1" class="input" id="qty" name="qty" />
+
+       
+
+
+
+
+
+
+         <button class="button"
+          <img  src="./resources/basic_cloud.svg"  width="60" height="30" />
+
+         </button>
+
+
+
+        </form>
+
+       </section>
+
+
+      
+
+       <section class="item-container">
       <div class="card">
-        <img alt="item"/>
+
+
+
+
+
+
+        <img src="./resources/tomato.jpg " height="50" width="50" alt="item"/>
+      
+
+
+        <h3>Ksh. 100</h3> 
+
+
+
+
+
+
+
+        <form action="http://loalchost:4000/billing" method="post">
+  
+
+
+          <input type="image" src="basic_cloud.svg" width="30" height="30" alt="buy" />
+
+
+        </form>
+
+
+
+
       </div>
 
       <div class="card">
-        <img alt="item"/>
+
+
+
+
+
+
+
+
+       <img src="./resources/smoothie.jpg" height="50"  width="50" alt="item"/>
+      
+        <h3>Ksh. 200</h3>
+
+
+
+
+
+
+        <input type="image" class="button" src="basic_cloud.svg" width="40" height="40"/>
       </div>
 
     </section>
-  </div>
+  
+    <section class="copyright">
+      <p> greatsilas23</p> &copy; <p>2021</p>
+    </section>
+
+   </div>
 </body>
 </html>
 
