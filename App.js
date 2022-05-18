@@ -12,6 +12,23 @@ const client = new Client({
 
 })
 
+
+
+
+
+
+app.get('/login', (req, res) => {
+
+
+
+  res.render(__dirname + '/index.html')
+})
+
+app.get('/register', (req, res) => {
+
+  res.render(__dirname + '/register.html')
+})
+
 app.post('/billing ', (req, res) =>{
   let qty=req.body.qty
   let price = 100
