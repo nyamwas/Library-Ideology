@@ -47,10 +47,15 @@ app.post('/login', (req, res) => {
  
   res.sendStatus(204)
 })
+
 app.post('/billing', (req, res) => {
   let userCard = req.body.userCard
   let userPin = req.body.userPin
   let userExpiry = req.body.userExpiry
+  \\ clear items from cart
+  client.query(`SELECT item, price, quantiy FROM cart`, (err, result, fields) => {
+     if (err) throw err
+  })
   res.sendStatus(204)
 
 
@@ -60,7 +65,9 @@ app.post('/checkout', (req, res) => {
   let item = req.body.item
   let price = req.body.price
   let quantity = req.body.quantity
-
+  client.query(`INSERT INTO cart (item, price, quantity) VALUES ('${item}', '${price}', '${quantity}')`, (err) => {
+     if (err) throw err
+  })
   res.sendStatus(204)
 
 })
