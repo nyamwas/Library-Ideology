@@ -25,13 +25,20 @@
 }
 .popup
   {
-    height: 30vw;
-    width: 30vw;
+    height: 50vw;
+    width: 70vw;
     position: absolute;
     top: 10vh;
-    left: 10vw;
-    z-index: 2;
+    left: 15vw;
+    z-index: 3;
     background-colors: #476830;
+  }
+  .blur
+  {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0,0,0,0.5);
+    z-index: 2;
   }
 .hide
 {
@@ -58,6 +65,8 @@
 </style>
 <body>
    <section class="popup">
+     <div class="blur">
+     </div>
      <div class="card">
 
 
