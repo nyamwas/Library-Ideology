@@ -12,21 +12,14 @@ class App extends Component {
 
    }
   }
-
+	componentDidMount(){
+	 	const item  = fetch("http://localhost:4000/checkout")
+		const response = item.json()
+		this.setState({ items: response})
+	}
   render(){
   return (
 <div>
-	<section className="popup hide">
-		<div className="blur">
-		</div>
-		<div className="card">
-			<img  height="50" width="50" alt="item"/>
-			<h3>Ksh. 100</h3> 
-			<form action="http://loalchost:4000/billing" method="post">
-		  		<input type="image"  width="30" height="30" alt="buy" />
-			</form>
-		</div>
-	</section>
 	<header>
 		<img  width="40" height="40" alt="logo"/>
 		<section className="navigation">
@@ -41,7 +34,7 @@ class App extends Component {
 			<section className="menu hide">
 				<img  width="40" height="40" alt="vegetables" />
 				<h2>Vegetables</h2>  
-				<form action="http://localhost:4000/checkout" method="post">
+				<form onSubmit={handleAddToCart} method="post">
 					<img alt="logo" height="50" width="50" /> 
 					<hr/>
 					<input type="number" value="1" className="input" id="qty" name="qty" />
