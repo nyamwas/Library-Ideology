@@ -6,7 +6,18 @@
       <title>&copy; &fracmv<sup>2</sup>r;</title>
      </head>
      <body>
-       <div></div>
+       <div>
+          <form action="" method="_POST" onsubmit="(e) => e !== '' ? localStorage.setItem(a, e.currentTarget.childNodes[2].value) : console.log(`err`)">
+            <label>Name two programming paradigms<br><input type="radio"/><span>Procedural, Object Oriented</span><input type="radio"/><span>Functional, Imperative</span><input type="radio"/><span>Declarative, Functional</span></label>
+            <label>Prove<br><span>P(x) = 0   </span><input type="radio"/><span>P(k + 1)</span></label>
+
+            <label>Evaluate        <input type="radio"/><span>&lambda; (*xx)</span><input type="radio"/><span>&lambda; (*xx)4</span></label>
+
+
+          <input value="submit" type="submit"/>
+</form>
+
+</div>
      </body>
      <script type="text/javascript">
         class A{
@@ -24,7 +35,11 @@
           return this.getX().concat(%s, 'found') 
 
           break
-       }
+       
+      }
+
+
+      document.querySelector('form').addEventListener('submit')
       </script>
     <html>
 
