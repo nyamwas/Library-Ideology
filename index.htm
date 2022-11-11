@@ -27,7 +27,32 @@
           function getX(){
             this.x !== '' ? return this.x : return 
           }
+        
         }
+        class AZ{
+          constructor(x){
+            this.id = x.id.toString()
+            this.name = x.name.toString().toLowerCase()
+            this.description = parseInt(x)
+            this.isEmpty = false
+          }
+          function getId(){
+            this.id !== '' ? return this.id : return
+          }
+          function next(){
+            this.description !== '' ? return this.description++ : return
+          }
+          function pre(){
+            this.description !== '' ? return this.description-- : return
+          }
+       }
+       let az = new AZ(new Object({id: 'foo', name: 'foo', description: 1},{id: 'bar', name: 'bar', description: 1}))
+       switch(az.getId()){
+         case 'foo':
+           return az.getId(az.next())
+           break
+       }
+
       let A = new A('foo','bar','')
       switch(A.getX.toString()){
         case 'foo':
