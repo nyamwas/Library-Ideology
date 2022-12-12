@@ -14,36 +14,36 @@
       <section></section>
       <footer></footer>
     </body>
-    <script type="text/javascript">
 
 
-       let B  = require('./script.js')
-       class A{
-         constructor(x,a,b){
-           this.x = new Object(x)
-           this.a = new Array(a)
-           this.b = new Array(b)
-         }
-         getX(){
-           x.valueOf !== {} ? return this.x : console.error()
-         }
-         setX(x){
-           x.length > 0 ? this.x = new Object(x) : console.error()
-         }
-       }
 
-       switch(new A({{id: 'a', value: 'home'},{id : 'b', value: 'feedback'}},['home.html','feedback.html'],[1,2]).x[0].id){
-         case 'a':
-           setX({{id: 'a', value: 'active'},{id: 'b', value: 'feedback'}) 
-           break
-         case 'b':
-           setX({{id: 'a', value: 'home'},{id: 'b', value: 'active'})
-           break
-         default:
-           alert('welcome')
-           break
-         }
-     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      <script type="text/javascript">
         $('header').style.width = '70vw' 
 
@@ -79,14 +79,14 @@
 
        
     
-=======
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+
+
+
+
+
+
+
   <link rel="icon" href="./resources/logo.jpg "/>
   <title>health-inventory-app</title>
 </head>
@@ -117,18 +117,36 @@
   </footer>
 </body>
 <script>
-const query = `INSERT INTO item VALUES ('${value_1}', '${value_2}')`
-const item = fetch('http://localhost:4000', 
 
-	header{
-		Content-Type: 'application/json',
-		
-	},
-	body{
+const item = fetch('./index.json').then(function (res) {
+  return res.json() 
+  }).then(function (res) {
+    console.log(res)
+  }
+})   
 
-	}
-	)
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
+
 </html>
 
->>>>>>> 473ceb75769484776d7a1e602caa220b89516583
+
