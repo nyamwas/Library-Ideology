@@ -18,7 +18,12 @@ const bodyParser = require('body-parser')
 
 
 
-http.createServer("."+ bodyParser.parse(url.params).pathname, (req, res) => {
+
+
+
+
+
+http.createServer("."+ bodyParser.parse(url.params, true).pathname, (req, res) => {
  res.end('Hello')
 }).listen(4000)
 
