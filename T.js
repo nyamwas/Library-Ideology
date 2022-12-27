@@ -3,38 +3,63 @@ class T{
     this.x = new Array(x)
   }
 
-  function getX(this.x){
-    this.x !== [] ? return this.x.nextX()  : return 
-  }
-  function setX(x){
-    this.x !== [] ? this.x = x.trim() : return
-
-  }
-
-  function nextX(this.x){
-    for(let i = 0; i < this.x.length - 1; i++){
-
-      if(this.x[i] !== this.x[this.x.length - 1]){
-
-        return this.x[i + 1]
-      }else{
-        return
-      }
-     }
-   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class U extends T{
   constructor(x){
     this.x = new Object(x)
   }
   function getLeft(){
 
-    this.x !== {} ? return new T([2,3,5,7,11]).getNext(this.x.id) : return
+
+
+
+    this.x !== {} ? console.log(this.x)  : console.error() 
   }
   function getRight(){
 
 
-    this.x !== {} ? return new T([13,17]).nextX(this.x.id) : return
+
+    this.x !== {} ? console.log(this.x) : console.error()
+ 
+  }
+
+}
+ 
+
+class V extends U{
+  constructor(z){
+   this.a = z.childNodes[0] 
+   this.b = z.childNodes[1]
+   this.c = false
+  }
+  function moveFwd(){
+   this.b.style.transform = `translateX(${Math.floor(Math.random(2))}px)` 
+   return this.b
+  }
+  function moveBack(){
+   this.b.style.transform = `translateX(${Math.floor(Math.random(2))}px`
+   return this.b
   }
 }
 
+  function 
