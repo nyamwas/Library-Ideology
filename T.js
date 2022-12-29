@@ -3,7 +3,19 @@ class T{
     this.x = new Array(x)
   }
 
+
+
+
+
+  const getX = () => {
+
+   this.x.isEmpty() ? console.error() : console.log(this.x[0]).then((item) => console.log(item.toString())).catch((err) => console.error(err))
+
+
+   return this.x
 }
+}
+
 
 
 
@@ -28,19 +40,33 @@ class U extends T{
   constructor(x){
     this.x = new Object(x)
   }
-  function getLeft(){
 
 
 
 
-    this.x !== {} ? console.log(this.x)  : console.error() 
-  }
-  function getRight(){
+  const getLeft = () => {
 
 
 
-    this.x !== {} ? console.log(this.x) : console.error()
- 
+
+
+    this.x !== {} ? console.log(this.x.getX())  : console.error() 
+  
+
+    return
+}
+
+
+
+
+  const getRight = () => {
+
+
+
+
+    this.x !== {} ? console.log(this.x.getX()) : console.error()
+
+    return 
   }
 
 }
@@ -62,4 +88,4 @@ class V extends U{
   }
 }
 
-  function 
+
