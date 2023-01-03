@@ -1,0 +1,23 @@
+{
+  {
+    id: 'a',
+    name: 'customer',
+
+
+    description: '<div>'+'<form onsubmit="" action="" target="" method="post">'+'<input type="text" placeholder="id"/>'+'<input type="email" placeholder="name"/>'+'<input type="password" placeholder="****"/>'+'<input type="submit" value="authenticate"/>'+'</form>'+'</div>'
+
+   },
+   {
+     id: 'b',
+     name: 'stakeholder',
+     description: '<table>'+'<tr>'+'<td>'+'id'+'</td>'+'<td>'+'name'+'</td>'+'</tr>'+'</table>'
+   },
+   {
+     id: 'c',
+     name: 'admin',
+     description: ''
+   }
+}
+ 
+
+
