@@ -1,3 +1,11 @@
+/* Date created: 25th Dec
+
+   Date modified: 6th Jan
+*/
+
+
+
+
 class T{
   constructor(x){
     this.x = new Array(x)
@@ -7,7 +15,9 @@ class T{
 
 
 
-  const getX = () => {
+
+
+  function getX(){
 
    this.x.isEmpty() ? console.error() : console.log(this.x[0]).then((item) => console.log(item.toString())).catch((err) => console.error(err))
 
@@ -44,7 +54,8 @@ class U extends T{
 
 
 
-  const getLeft = () => {
+
+  function getLeft(){
 
 
 
@@ -59,7 +70,8 @@ class U extends T{
 
 
 
-  const getRight = () => {
+
+   function getRight(){
 
 
 
