@@ -98,6 +98,22 @@ class V extends U{
    this.b.style.transform = `translateX(${Math.floor(Math.random(2))}px`
    return this.b
   }
+  function equipSelf(){
+   this.b.style.transform = `translateY(${Math.floor(Math.random(2))}px` 
+   return this.b
+  }
+  function speechOut(){
+   this.b.childNodes[0].childNodes[5].style.height = `${Math.floor(Math.random(2))}px`
+   return this.b.childNodes[0].childNodes[5]
+  }
+  function thinkOut(){
+   this.b.parentElement.innerHTML += '<div>'+Math.floor(Math.random(2))+'</div>'   return this.b.parentElement
+  }
+
+
+
 }
+
+
 
 
