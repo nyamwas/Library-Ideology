@@ -1,0 +1,61 @@
+import React from 'react'
+import Username from './res/Username.jpg'
+import Age from './res/Age.jpg'
+const RegisterComponent = (props) => {
+    return(
+        <div
+            style={props.registerComponent}
+        >
+            <h2
+                style={props.registerComponent.form.heading}
+            >
+                {props.content}
+            </h2>
+            <form
+                method="POST"
+                action="/form-registration"
+            >
+                <center>
+                    <img
+                        src={Username}
+                        style={props.registerComponent.form.username.icon}
+                        alt="username"
+                    />
+                    <br/>
+                    <input
+                        style={props.registerComponent.form.username}
+                        id="userName"
+                        type="text"
+                        placeholder="user001"
+                    />
+                    <br/>
+                    <img
+                        src={Age}
+                        style={props.registerComponent.form.age.icon}
+                        alt="age"
+                    />
+                    <br/>
+                    <input
+                        style={props.registerComponent.form.age}
+                        id="userAge"
+                        type="date"
+                    />
+                    <br/>
+                    <br/>
+                    <input
+                        style={props.registerComponent.form.submit}
+                        type="submit"
+                        value="Register"
+                    />
+                    <input
+                        style={props.registerComponent.form.clear}
+                        type="reset"
+                        value="Clear"
+                    />
+                    <br/>
+                </center>
+            </form>
+        </div>
+    )
+}
+export default RegisterComponent

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "health-inventory-app",
   "version": "1.0.0",
   "description": "A website to allow online e-commerce",
@@ -9,10 +10,38 @@
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/greatsilas23/health-inventory-app.git"
+=======
+  "name": "my-portfolio",
+  "homepage": "https://github.com/greatsilas23/myPortfolio#readme",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "0.9.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "App.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/greatsilas23/myPortfolio.git"
+>>>>>>> 7a2da4f499e10f359f280fa7bb68a4b65c82f692
   },
   "author": "greatsilas23",
   "license": "ISC",
   "bugs": {
+<<<<<<< HEAD
     "url": "https://github.com/greatsilas23/health-inventory-app/issues"
   },
   "homepage": "https://github.com/greatsilas23/health-inventory-app#readme",
@@ -21,5 +50,8 @@
     "http": "0.0.1-security",
     "pg": "^8.7.3",
     "url": "^0.11.0"
+=======
+    "url": "https://github.com/greatsilas23/myPortfolio/issues"
+>>>>>>> 7a2da4f499e10f359f280fa7bb68a4b65c82f692
   }
 }
