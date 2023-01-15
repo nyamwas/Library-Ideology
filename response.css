@@ -1,0 +1,11 @@
+.leftNavEnlarge
+{
+    animation: myEnlargeAnim linear forwards 0.4s;
+}
+
+@keyframes myEnlargeAnim
+{
+    from{ transform: translateX(-50px); transform: translateY(0px); }
+    to{ transform: translateX(50px); transform: translateY(0px); }
+}
+
