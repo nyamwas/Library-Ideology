@@ -2,5 +2,17 @@
 Author: greatsilas23
 Date modified: 
 */
-fetch("http://localhost:4000/records.json").then((results) => results.json()).then.console.log(results)
 
+function addItem() {  fetch("http://localhost:4000/records.json").then((results) => {
+    console.log(results)
+    results.json()
+},
+(error) => {
+    console.log(error)
+}).then((response) => {
+    console.log(response)
+})
+
+}
+
+console.log('found', addItem())
