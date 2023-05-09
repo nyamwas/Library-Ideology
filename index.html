@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
+
 <html>
     <head>
         <title>Book MS</title>
@@ -19,34 +19,29 @@
                 </div>
             </div>
             <div class="groupTablink addTopLeftCurve addTopRightCurve">
-                <table>
-                    <tr>
-                        <td>
-                            <div id="availableLink" class="tablink availableLink" ><p>AVAILABLE </p></div>
-                        </td>
-                        <td>
-                            <div id="addLink" class="tablink addLink" title="INSERT RECORDS" ><p>ADD </p></div>
-                        </td>
-                        <td>
-                            <div id="borrowLink" class="tablink borrowLink"><p>BORROW </p></div>
-                        </td>
-                        <td>
-                            <div id="returnLink" class="tablink returnLink"><p>RETURN </p></div>
-                        </td>
-                        <td>
-                            <div id="overdueLink" class="tablink overdueLink" ><p>OVERDUE </p></div>
-                        </td>
-                        <td>
-                            <div id="editLink" class="tablink editLink" ><p>EDIT</p></div>
-                        </td>
-                        <td>
+                    <section style="display: flex; flex-direction: row;">
+                        <div style="width: 120px; height: 80px;">
+                            <img src="./menu.svg" width="25" height="25" alt=""/>
+                        </div>
+                        <div style="width: 120px; height: 80px;">
+                            <img src="./add.png" width="25" height="25" alt=""/>
+                        </div>
+                        <div style="width: 120px; height: 80px;">
+                            <img src="./borrow.png" width="25" height="25" alt=""/>
+                        </div>
+                        <div style="width: 120px; height: 80px;">
+                            <img src="./return.png" width="25" height="25" alt=""/>
+                        </div>
+                        <div style="width: 120px; height: 80px;">
+                            <img src="./edit.svg" width="25" height="25" alt=""/>
+                        </div>
+                        <div>
                             <div class="tablink tablinkSearchBar"><input class="addBorderCurve searchBarElement" type="search" placeholder="search..."><img class="alignInSearchBar addBorderCurve" src="./search.png" width="20" height="20" alt="default"></div>
-                        </td>
-                        <td>
+                        </div>
+                        <div>
                             <div class=" tablinkProfile"><center><div class="roundEdgeComplete"><center><img src="./defaultUser.png" width="30" height="30" alt="default"></center></div></center>  </div>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                    </section>
             </div>
             <div class="mainItems addBottomLeftCurve addBottomRightCurve">
                 <div class="sideAction arrangeVertically">
@@ -95,10 +90,10 @@
                 </div>
                 <div class="groupTabcontent">
                     <div class="factCardOne addBorderCurve displayShadow">
-                        <p>Johnny Mwenda Pole<img src="http://picsum.photos/200/200" width="200" height="200" alt=""/></p><hr><center><p>Ksh. 44</p></center>
+                        <p>Johnny Mwenda Pole<img src="http://picsum.photos/110/110" width="110" height="110" alt=""/></p><hr><center><p>Ksh. 44</p></center>
                     </div>
                     <div class="factCardTwo addBorderCurve displayShadow">
-                        <p>Johnny Be Good<img src="http://picsum.photos/200/200" width="200" height="200" alt=""/></p><hr><center><p>Ksh. 4</p></center>
+                        <p>Johnny Be Good<img src="http://picsum.photos/110/110" width="110" height="110" alt=""/></p><hr><center><p>Ksh. 4</p></center>
                     </div>
                     
 
@@ -110,90 +105,10 @@
                 </center>
             </div>
         </div>
-    </body>
+	    </body>
+	
 
-</html>
-
-
-
-=======
-  <html lang="en">
-    <head>
-      <meta name="charset" content="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <title>&copy; iLibrary</title>
-    <head>
-    <body>
-      <header></header>
-      <nav></nav>
-      <aside></aside>
-      <section></section>
-      <footer></footer>
-    </body>
-    <script type="text/javascript">
-
-
-       let B  = require('./script.js')
-       class A{
-         constructor(x,a,b){
-           this.x = new Object(x)
-           this.a = new Array(a)
-           this.b = new Array(b)
-         }
-         getX(){
-           x.valueOf !== {} ? return this.x : console.error()
-         }
-         setX(x){
-           x.length > 0 ? this.x = new Object(x) : console.error()
-         }
-       }
-
-       switch(new A({{id: 'a', value: 'home'},{id : 'b', value: 'feedback'}},['home.html','feedback.html'],[1,2]).x[0].id){
-         case 'a':
-           setX({{id: 'a', value: 'active'},{id: 'b', value: 'feedback'}) 
-           break
-         case 'b':
-           setX({{id: 'a', value: 'home'},{id: 'b', value: 'active'})
-           break
-         default:
-           alert('welcome')
-           break
-         }
-     </script>
-     <script type="text/javascript">
-        $('header').style.width = '70vw' 
-
-        $('header').style.position = 'sticky '
-        $('header').style.top = '2vh'
-        $('nav').style.width = '55vw'
-
-
-        $('nav').style.float = 'left'
-        $('nav').style.position = 'absolute'
-        $('nav').style.top = '22vh'
-        $('aside').style.width = '15vw'
-        $('aside').style.position = 'sticky' 
-
-        $('aside').style.top = '22vh'
-
-        $('aside').style.float = 'right'
-        $('section').style.width = '55vw'
-
-
-        $('section').style.position = 'relative'
-
-
-        $('section').style.top = '40vh'
-      </script>
-
+        <script type="text/javascript" src="./script.js"></script>
+	<script type="text/javascript" src="./records.js"></script>
   </html>
 
-
-         
-     </script>
-
-
-       
-    
->>>>>>> fdb5d92aefe2b395bb22b1e21df357f692f82a56
