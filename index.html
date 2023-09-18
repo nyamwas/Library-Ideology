@@ -11,7 +11,23 @@
         <link class="addBorderCurve" rel="icon" href="./shelf.png">
     </head>
     <body>
-        <div class="root">
+        
+          
+	    </body>
+	
+
+        <script type="text/javascript" src="./script.js"></script>
+	<script type="text/javascript" src="./records.js"></script>
+<script type="text/javascript">
+let totalCost = 48
+let marginalCost = 4
+class Dashboard {
+constructor(id, name, description){
+this.dashboard =
+          `
+
+
+<div class="root">
             <div class="topSide">
                 <div class="alignIconHome">
                     <img class="mainIconImage" src="./shelf.png" alt="icon">
@@ -104,17 +120,23 @@
                 </div>
             </div>
             <div class="bottomSide">
-                <center>
-                    <span>Total Cost: Ksh. 48</span>
+                <center><span>Total Cost: Ksh. 48</span>
                     <span>Marginal Cost: Ksh 4</span> 
                     <p>Book MS 2021</p><span>&copy;</span>
                 </center>
             </div>
-        </div>
-	    </body>
-	
-
-        <script type="text/javascript" src="./script.js"></script>
-	<script type="text/javascript" src="./records.js"></script>
+        </div>`
+}
+get(){
+let result
+if(this.dashboard !== null){
+result = this.dashboard
+}
+return result
+}
+}
+document.querySelector('body').innerHTML += new Dashboard(01, 'admin', 'KES'+totalCost).get()
+let result = fetch('http://github.com/greatsilas23/Library-Project/lib.json')
+</script>
   </html>
 
