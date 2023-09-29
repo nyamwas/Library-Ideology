@@ -2,9 +2,10 @@
 
 <html>
     <head>
-        <title>Book MS</title>
-        <meta name="charset" content="utf-8">
+        <title>Book MS &copy; 2021</title>
+        <meta charset="utf-8">
         <meta name="author" content="Ian, Silas, Stephanie, Yvonne">
+<meta name="robots" content="follow, no follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
 
@@ -137,6 +138,32 @@ return result
 }
 document.querySelector('body').innerHTML += new Dashboard(01, 'admin', 'KES'+totalCost).get()
 let result = fetch('http://github.com/greatsilas23/Library-Project/lib.json')
+class x{
+constructor(posX, posY, top, left){
+this.posX = posX
+this.posY = posY
+this.top = top
+this.left = left
+this.isEmpty = false
+}
+get(){
+let result
+document.querySelector('body').addEventListener('load', () => num_in_queue <0 ? document.querySelector('body').innerHTML += update(this.posX, this.posY, this.top, this.left).then(update(0, 0, 0, 0)) : alert('empty'))
+
+return result
+}
+update(posX, posY, top, left){
+let result
+for(let i = 0; i <= 300; i = i + 20){
+for(let j = 0; j <= 300; j = j + 20){
+result = '<div>'.concat('<span style="background-color: grey; border: solid ').concat(2).concat('px black; height: ').concat(20).concat('vh; left: ').concat(left + j).concat('vw; position: absolute; top: ').concat(top + i).concat('vh; width: ').concat(20).concat('vw; z-index: ').concat(20).concat(';">').concat('</span>')
+}
+}
+
+return result.concat('</div>')
+}
+
+new x().get()
 </script>
   </html>
 
