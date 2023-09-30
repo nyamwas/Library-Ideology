@@ -32,11 +32,12 @@ We use reasonable Care and skill to keep the Book MS operational
 ### Your Use of The Book MS
 #### Creating a Book MS account 
 
+You may need to create a Book MS Account to use 
 #### Your rights to use the Book MS
 
 
 ##### Access to Book MS
-You may need to create a Book MS Account to use 
+Subject to your compliance with these Terms, we grant you limited, non-exclusive, revocable permission to make personal non-commercial use of the Book MS and the Content
 ##### Book MS's proprietary rights
 The Book MS and the content are the property of Book MS or Book MS's licensors 
 
