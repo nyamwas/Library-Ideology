@@ -22,8 +22,9 @@
 <script type="text/javascript">
 let totalCost = 48
 let marginalCost = 4
-class Dashboard {
-constructor(id, name, description){
+class Dashboard extends record{
+constructor(){
+super()
 this.dashboard =
           `
 
@@ -37,25 +38,25 @@ this.dashboard =
             <div class="groupTablink addTopLeftCurve addTopRightCurve">
                     <section style="display: flex; flex-direction: row;">
                         <div style="width: 120px; height: 80px;">
-                            <img src="./menu.svg" width="25" height="25" alt=""/>
+                            <img src="./menu.svg" width="25" height="25" alt="home"/>
                         </div>
                         <div style="width: 120px; height: 80px;">
-                            <img src="./add.png" width="25" height="25" alt=""/>
+                            <img src="./add.png" width="25" height="25" alt="about us"/>
                         </div>
                         <div style="width: 120px; height: 80px;">
-                            <img src="./borrow.png" width="25" height="25" alt=""/>
+                            <img src="./borrow.png" width="25" height="25" alt="feedback"/>
                         </div>
                         <div style="width: 120px; height: 80px;">
-                            <img src="./return.png" width="25" height="25" alt=""/>
+                            <img src="./return.png" width="25" height="25" alt="sign in"/>
                         </div>
                         <div style="width: 120px; height: 80px;">
-                            <img src="./edit.svg" width="25" height="25" alt=""/>
+                            <img src="./edit.svg" width="25" height="25" alt="log in"/>
                         </div>
                         <div>
                             <div class="tablink tablinkSearchBar"><input class="addBorderCurve searchBarElement" type="search" placeholder="search..."></div>
                         </div>
                         <div>
-                            <div class="tablinkProfile"><img src="./profile.png" width="30" height="30" alt="default"></div>
+                            <div class="tablinkProfile"><img src="./profile.png" width="30" height="30" alt="?"></div>
                         </div>
                     </section>
             </div>
@@ -91,26 +92,26 @@ this.dashboard =
                 </div>
                 <div class="groupTabcontent">
                     <div class="factCardOne addBorderCurve displayShadow">
-                        <p>BOOKS</p><hr><center><p>44</p></center>
+                        <p>BOOKS</p><hr><center><p>${this.description.books}</p></center>
                     </div>
                     <div class="factCardTwo addBorderCurve displayShadow">
-                        <p>BORROWS</p><hr><center><p>4</p></center>
+                        <p>BORROWS</p><hr><center><p>${this.descriprion.borrows.length}</p></center>
                     </div>
                     <div class="factCardThree addBorderCurve displayShadow">
-                        <p>CATEGORIES</p><hr><center><p>13</p></center>
+                        <p>CATEGORIES</p><hr><center><p>${this.description.categories}</p></center>
                     </div>
                     <div class="factCardFour addBorderCurve displayShadow">
-                        <p>AUTHORS</p><hr><center><p>49</p></center>
+                        <p>AUTHORS</p><hr><center><p>${this.description.authors}</p></center>
                     </div>
 
                 </div>
                 <div class="groupTabcontent">
-                    <a href="file:///home/silas/Library-Project/Johnny Mwenda Pole.pdf" download>
+                    <div>
                     <div class="factCardOne addBorderCurve displayShadow" onclick="">
-                        <div style="height: 45px;">Johnny Mwenda Pole</div>
-                        <img src="https://github.com/greatsilas23/Library-Project/blob/gh-pages/Johnny%20Mwenda%20Pole.rtf" width="90" height="90" alt=""/></p><hr><center><p>Ksh. 44</p></center>
+                        <p>Johnny Mwenda Pole</p>
+                        <img src="" width="90" height="90" alt="checkout"/></p><hr><center><p><a href="https://github.com/greatsilas23/Library-Project/blob/gh-pages/Johnny%20Mwenda%20Pole.rtf"> KES ${this.description.price}</a></p></center>
                     </div>
-                    </a>
+                    </div>
                     <a href="file:///home/silas/Library-Project/Johnny Be Good.pdf" download>
                         <div class="factCardTwo addBorderCurve displayShadow" onclick="">
                             <div style="height: 45px;">Johnny Be Good</div>
@@ -136,9 +137,8 @@ result = this.dashboard
 return result
 }
 }
-document.querySelector('body').innerHTML += new Dashboard(01, 'admin', 'KES'+totalCost).get()
-let result = fetch('http://github.com/greatsilas23/Library-Project/lib.json')
-class x{
+
+class x extends record{
 constructor(posX, posY, top, left){
 this.posX = posX
 this.posY = posY
@@ -150,6 +150,8 @@ get(){
 let result
 document.querySelector('body').addEventListener('load', () => num_in_queue <0 ? document.querySelector('body').innerHTML += update(this.posX, this.posY, this.top, this.left).then(update(0, 0, 0, 0)) : alert('empty'))
 
+document.querySelector('body').innerHTML += new Dashboard(01, 'admin', 'KES'+totalCost).get()
+let result = fetch('http://github.com/greatsilas23/Library-Project/lib.json')
 return result
 }
 update(posX, posY, top, left){
