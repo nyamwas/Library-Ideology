@@ -1,332 +1,38 @@
-.leftNavEnlarge
-{
-    animation: myEnlargeAnim linear forwards 0.4s;
+
+.avatarMoveLeft {
+animation: avatarMoveLeftAnim 1.2s forwards;
 }
 
-@keyframes myEnlargeAnim
-{
-    from{ transform: translateX(-50px); transform: translateY(0px); }
-    to{ transform: translateX(50px); transform: translateY(0px); }
+@keyframes avatarMoveLeftAnim{
+from{
+transform: translateX(5vw);
+} to {
+transform: translateX(10vw);
+}
 }
 
-.root
-{
-    width: 97.5vw;
-    height: 620px;
-    background-color: orange;
-    color: white;
-    overflow: hidden;
-}
-.topSide
-{
-    width: 97.5vw;
-    height: 70px;
-    background-color: orange;
-    color: white;
-    z-index: 1;
-}
-.topSideElevated
-{
-    width: 97.5vw;
-    height: 70px;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    z-index: 2;
-}
-.groupTablink
-{
-    width: 97.5vw;
-    height: 62.3px;
-    background-color: black;
-}
-.mainItems
-{
-    width: 97.5vw;
-    height: 370px;
-    overflow: hidden;
-}
-.sideAction
-{
-    width: 20vw;
-    height: 380px;
-    float: left;
-    background-color: black;
-}
-.groupTabcontent
-{
-    background-image: url('https://picsum.photos/600/380');
-    background-size: cover;
-    height: 380px;
-    width: 77.5vw;
-    float: right;
-    display: flex;
-    overflow-x: scroll;
+.avatarMoveRight {
+animation: avatarMoveRightAnim 1.2s forwards;
 }
 
-.bottomSide
-{
-    height: 68px;
-    width: 97.5vw;
-    background-color: orange;
+@keyframes avatarMoveRightAnim{
+from {
+transform: translateX(10vw);
+} to {
+transform: translateX(5vw);
 }
-.factCardOne
-{
-    position: absolute;
-    top: 160px;
-    left: 24vw;
-    width: 10vw;
-    height: 190px;
-    background-color: black;
-    text-align: center;
-}
-.factCardTwo
-{
-     position: absolute;
-     top: 160px;
-     left: calc(24vw + 15vw);
-     width: 10vw;
-     height: 190px;
-     background-color: black;
-     text-align: center;
-}
-.factCardThree
-{
-     position: absolute;
-     top: 160px;
-     left: calc(24vw + 30vw);
-     width: 10vw;
-     height: 93px;
-     background-color: black;
-     text-align: center;
-}
-.factCardFour
-{
-     position: absolute;
-     top: 160px;
-     left: calc(24vw + 45vw);
-     width: 10vw;
-     height: 93px;
-     background-color: black;
-     text-align: center;
-}
-.helpCard
-{
-    width: calc(20vw - 20px);
-    height: 100px;
-    background-color: orange;
-    color: black;
-    margin: 10px;
-}
-.helpCard
-{
-    width: calc(20vw - 20px);
-    height: 100px;
-    background-color: orange;
-    color: black;
-    margin: 10px;
-}
-.formCard
-{
-    min-width: 33vw;
-    max-width: 33vw;
-    height: 300px;
-    background-color: black;
-    margin: 10px 10px;
-    padding: 10px;
-}
-td.output
-{
-    width: 300px;
-}
-.leftNav{
-    width: 7vw;
-    height: 70px;
-    float: left;
-    padding: 0px 10px
-}
-.backImage
-{
-    width: 7vw;
-    height: 50px;
 }
 
-.mainIconImage
-{
-    width: 7vw;
-    height: 80px;
-}
-.mainNav{
-    width: calc(97.5vw - 7vw - 20px);
-    height: 70px;
-    float: right;
-}
-.searchBarElement{
-    margin-top: 10px;
-    height: 25px;
-    width: auto;
-    border: none;
-    outline: none;
-}
-.tablink{
-    min-width: 8vw;
-    max-width: auto;
-    height: 50px;
-    transition: ease-in 0.4s;
-    background-color: black;
-    float: left;
-    text-align: center;
-    padding: 5px 5px;
-}
-.tablinkProfile{
-    width: 11.8vw;
-}
-.roundEdgeComplete
-{
-    width: 4vw;
-    height: 8vh;
-    border-radius: 60%;
-    background-color: white;
+.avatarJump {
+animation: avatarJumpAnim 1.2s forwards;
 }
 
-body
-{
-    font-size: 14;
-    font-family: 'Times New Roman', Arial;
-    font-weight: bold;
-    text-decoration: none;
+@keyframes avatarJumpAnim{
+from{
+transform: translateY(5vh);
+} to{
+transform: translateY(10vh);
 }
 
-table, td, tr {
-    border-collapse: collapse;
-    border: none;
-    outline: none;
 }
 
-.arrangeHorizontal
-{
-    flex-direction: row;
-}
-
-.arrangeVertically
-{
-    display: flex;
-    flex-direction: column;
-}
-.addBottomLeftCurve
-{
-    border-bottom-left-radius: 15px;
-    overflow: hidden;
-}
-.addBottomRightCurve
-{
-    border-bottom-right-radius: 15px;
-    overflow: hidden;
-}
-.addTopLeftCurve
-{
-    border-top-left-radius: 15px;
-    overflow: hidden;
-}
-.addTopRightCurve
-{
-    border-top-right-radius: 15px;
-    overflow: hidden;
-}
-
-.displayShadow
-{
-    box-shadow: 15px 15px 15px rgba(5, 5, 5, 0.5);
-}
-.myFacts
-{
-    list-style-type: lower-roman;
-}
-
-.add
-{
-    display: none;
-    position: absolute;
-    top: 150px;
-    left: 40vw;
-}
-.borrow
-{
-    display: none;
-    position: absolute;
-    top: 150px;
-    left: 40vw;
-}
-.returnItems
-{
-    display: none;
-    position: absolute;
-    top: 150px;
-    left: 40vw;
-}
-.overdue
-{
-    display: none;
-    position: absolute;
-    top: 150px;
-    left: 40vw;
-}
-table.output, td.output, tr.output
-{
-    border: solid 1px white;
-    border-collapse: collapsed;
-    color: white;
-}
-
-.edit
-{
-    display: none;
-    position: absolute;
-    top: 150px;
-    left: 40vw;
-}
-.alignInSearchBar
-{
-    position: absolute;
-    top: 95px;
-    left: 68.8vw;
-    z-index: 2;
-}
-.leftNav:hover{
-    cursor: pointer;
-}
-
-.addBorderCurve{
-    border-radius: 10px;
-}
-
-.alignIconHome
-{
-    padding-left: calc(97.5vw - 50vw);
-}
-.alignIconHomeResults
-{
-    margin-left: calc(97.5vw - 50vw - 7vw - 20px);
-}
-
-
-.tablink:hover
-{
-    background-color: orange;
-    color: white;
-    cursor: pointer;
-}
-.tablinkSearchBar:hover
-{
-    background-color: black;
-}
-
-.tablinkProfile:hover
-{
-    background-color: black;
-}
-
-.factCard{
-    width: 130px;
-    height: 130px;
-    
-}
