@@ -15,14 +15,107 @@
         Hello world
           
 	    </body>
-	function draw(){
+	<script type="text/javascript">
 /** @Author: 
   * @Date: Mon 2 Oct 2023 11:11:00 +0300
-  * @LastModifiedBy: 
-  * @LastModifiedDate: 
-  
+  * @LastModifiedBy: greatsilas23
+  * @LastModifiedDate: Mon 2 Oct 2023 12:09:00 +0300
+  */
+const pixel = 20
+class Tuple{
+constructor(backgroundColor, border, height, left, position, top, width, zIndex){
+this.tuple = '<div>'.concat('<section style="background-color: ').concat(backgroundColor).concat('; border: solid ').concat(border).concat('px black; height: ').concat(height).concat('vh; left: ').concat(left).concat('vw; position: ').concat(position).concat('; top: ').concat(top).concat('vh; width: ').concat('vw; z-index: ').concat(zIndex).concat(';" id="').concat(new Set().id).concat('" class="avatarMoveLeft avatarMoveRight avatarJump">').concat('</div>')
+}
+getTuple(){
+let result 
+this.tuple != null ? result = this.tuple : result = null
+return result
+}
+setTuple( backgroundColor, border, height, left, position, top, width, zIndex) {
 let result
-result = new Avatar( [[0,1,1,1,1,1,1,1,0],
+result = '<div>'.concat('<section style="background-color: ').concat(backgroundColor).concat('; border: solid ').concat(border).concat('px black; height: ').concat(height).concat('vh; left: ').concat(left).concat('vw; position: ').concat(position).concat('; top: ').concat(top).concat('vh; width: ').concat('vw; z-index: ').concat(zIndex).concat(';" id="').concat(new Set().id).concat('" class="avatarMoveLeft avatarMoveRight avatarJump">').concat('</div>')
+
+return result
+}
+}
+class Set{
+constructor(){
+this.id = 1
+this.name = 'avatar01'
+this.description = 'avatar'
+this.set = null
+}
+}
+
+class Avatar extends Set{
+constructor(){
+super()
+this.avatar = null
+}
+isEmpty(){
+let result
+this.avatar != null ? result = false : result = true
+
+return result
+}
+peek(){
+let result 
+isEmpty() ? result = null : result = this.arr[11]
+
+return result
+
+}
+
+pop(val){
+let result 
+isEmpty() ? result = null : result = this.arr.filter((items) => items !== val)
+
+return result
+}
+draw(avatarItem){
+let result 
+!isEmpty() ? () => {
+for(let i = 0; i <= this.arr.length - 1; i=i + 1){
+for(let k = 0; k <= this.arr[i].length - 1; k = k + 1){
+switch(this.arr[i][k]){
+case 0:
+result = result.concat(new Tuple('green',  2, pixel, k,'absolute', i, pixel, i).getTuple())
+break
+case 1:
+result = result.concat(new Tuple('black', 2, pixel, k, 'absolute', i, pixel, i).getTuple())
+break
+case 2:
+result = result.concat(new Tuple('grey',2,pixel,k,'absolute',i, pixel,i).getTuple())
+break
+case 3:
+result = result.concat(new Tuple('white', 2,pixel,k, 'absolute', i, pixel, i).getTuple())
+break
+case 4:
+result = result.concat(new Tuple('red',2,pixel,k, 'absolute',i,pixel,i).getTuple())
+break
+default:
+result = null
+break
+}
+}
+}
+
+} : result = null
+
+this.avatar = result
+return result
+}
+update(backgroundColor, border, height, left, position, top, width, zIndex){
+let result 
+result = null
+
+this.avatar = result
+return result
+}
+}
+
+document.querySelector('body').addEventListener('load', () => { 
+document.querySelector('body').innerHTML+= new Avatar().draw( [[0,1,1,1,1,1,1,1,0],
 [1,1,1,1,1,1,1,1,1],
 [2,2,2,2,2,2,2,2,2],
 [2,1,1,2,2,2,1,1,2],
@@ -33,9 +126,11 @@ result = new Avatar( [[0,1,1,1,1,1,1,1,0],
 [2,2,4,4,4,4,4,2,2],
 [2,2,4,3,3,3,4,2,2],
 [0,2,4,3,3,3,4,2,0],
-[0,0,4,4,4,4,4,0,0]] ).draw()
-return document.querySelector('body').innerHTML+= result
-}
+[0,0,4,4,4,4,4,0,0]] )
 
+console.log('draw')
+
+})
+</script>
   </html>
 
