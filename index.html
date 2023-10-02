@@ -115,7 +115,7 @@ let result
 !isEmpty() ? () => {
 for(let i = 0; i <= this.arr.length - 1; i=i + 1){
 for(let k = 0; k <= this.arr[i].length - 1; k = k + 1){
-switch(this.arr[i][k]){
+switch(parseInt(avatarItem[i][k])){
 case 0:
 result = result.concat(new Tuple('green',  2, pixel, k,'absolute', i, pixel, i).getTuple())
 break
@@ -152,7 +152,7 @@ return result
 }
 }
 
-document.querySelector('body').addEventListener('load', () => { 
+
 document.querySelector('body').innerHTML+= new Avatar().draw( [[0,1,1,1,1,1,1,1,0],
 [1,1,1,1,1,1,1,1,1],
 [2,2,2,2,2,2,2,2,2],
@@ -168,7 +168,6 @@ document.querySelector('body').innerHTML+= new Avatar().draw( [[0,1,1,1,1,1,1,1,
 
 console.log('draw')
 
-})
 </script>
   </html>
 
