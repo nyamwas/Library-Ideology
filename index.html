@@ -15,8 +15,27 @@
         Hello world
           
 	    </body>
-	
-
+	function draw(){
+/** @Author: 
+  * @Date: Mon 2 Oct 2023 11:11:00 +0300
+  * @LastModifiedBy: 
+  * @LastModifiedDate: 
+  
+let result
+result = new Avatar( [[0,1,1,1,1,1,1,1,0],
+[1,1,1,1,1,1,1,1,1],
+[2,2,2,2,2,2,2,2,2],
+[2,1,1,2,2,2,1,1,2],
+[2,2,2,2,2,2,2,2,2],
+[2,2,2,2,2,2,2,2,2],
+[2,3,1,3,2,3,1,3,2],
+[2,2,2,2,2,2,2,2,2],
+[2,2,4,4,4,4,4,2,2],
+[2,2,4,3,3,3,4,2,2],
+[0,2,4,3,3,3,4,2,0],
+[0,0,4,4,4,4,4,0,0]] ).draw()
+return document.querySelector('body').innerHTML+= result
+}
 
   </html>
 
