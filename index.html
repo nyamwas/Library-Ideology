@@ -1,173 +1,397 @@
+
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
-        <title>Book MS &copy; 2021</title>
         <meta charset="utf-8">
-        <meta name="author" content="Ian, Silas, Stephanie, Yvonne">
-<meta name="robots" content="follow, no follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-
-        <link class="addBorderCurve" rel="icon" href="./shelf.png">
+        <title>Library-Ideology</title>
+        <link rel="icon" class="addBorderRadius" href="./img/icon.png">
+       <meta name="author" content="greatsilas23, wolverine, spiderman, superman">
+	    <meta name="description" content="a web application software that follows web protocols to achieve referential integrity in Ecommerce environment">
+	    <meta name="robots" content="follow, no-follow">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Web site created to allow online e-commerce">
+        
+	    <link rel="stylesheet" href="./styles.css">
     </head>
-    <body>
-        Hello world
+   <body>
+                <div class= "navigationContainer stickyDiv flex_stuff horiz spaceEven ">
+            <div class= "myTopLinks moveLeft sideBarToggle leftFloat ">
+                <img class= "changeColor " src= "./img/menu.png " alt= "menu " width= "26 " height= "26 ">
+            </div>
+            <div class= "pageLinksContainer flex_stuff center_stuff horiz spaceEven rightFloat ">
+                <div class= "loginFrmToggle ">
+                    <img class= "addBorderRadius  " src= "./img/logIn.jpeg " alt= "agripay " title= "HOME " width= "35 " height= "35 ">
+                </div>
+                <img class= "changeColor " src= "./img/cart.jpg " alt= "icon " width= "35 " height= "35 ">
+            </div>
+        </div>
+        <!-- HIDDEN DIVS START-->
+        <!-- 1. OPAQUE BACKGROUND -->
+        <div class= "opaqueBg hide_stuff ">
+        </div>
+	<div class= "cart_container hide_stuff ">
+		<div>
+			<center>
+				<img class= "changeColor " src= "./img/icon.png " alt= "icon " width= "70 " height= "70 ">
+				<hr>
+			</center>
+		</div>
+		<div class= "cart_item ">
+			<div class= "cart_item_icon "><img src= "./img/concombre.jpg " width= "50 " height= "50 "></div>	
+			<div class= "cart_item_icon "><img src= "./img/vegetables.png " width= "50 " height= "50 "></div>
+			<div>Qty: 2</div>
+		</div>
+		<div class= "cart_item ">
+			<div class= "cart_item_icon "><img src= "./img/concombre.jpg " width= "50 " height= "50 "></div>	
+			<div class= "cart_item_icon "><img src= "./img/vegetables.png " width= "50 " height= "50 "></div>
+			<div>Qty: 2</div>
+		</div>
+		<div class= "cart_item ">
+			<div class= "cart_item_icon "><img src= "./img/concombre.jpg " width= "50 " height= "50 "></div>	
+			<div class= "cart_item_icon "><img src= "./img/vegetables.png " width= "50 " height= "50 "></div>
+			<div>Qty: 2</div>
+		</div>
+	</div>
+        <!-- 2. LOGIN/REGISTER FORM -->
+        <div class= "accessTablinks flex_stuff horiz whiteColor hide_stuff ">
+            <div class= "loginTablink flex_stuff center_stuff ">
+                <img class= "addBorderRadius " src= "./img/IconShowLogin.png " alt= "icon " width= "40 " height= "40 ">
+            </div>
+            <div class= "registerTablink flex_stuff center_stuff ">
+                <img src= "./img/IconShowSignup.png " alt= "icon " width= "40 " height= "40 ">
+            </div>
+        </div>
+        <div class= "accessTabContents flex_stuff center_stuff hide_stuff hideOverflow ">
+            <div class= "loginFrm hideOverflow whiteColor hide_stuff ">
+                <form class= "usrLogin ">
+                    <label>Id</label><br>
+                    <input class= "execInput addBorderRadius featureIdInput " type= "text " placeholder= "ID002 " required= " "><br>
+                    <label>Password</label><br>
+                    <input class= "execInput addBorderRadius featureIdInput " type= "password " placeholder= "****** " required= " "><br>
 
-Library-Project
-Kenya lies across the equator and borders Somalia, Ethiopia, Tanzania, Uganda, Sudan, and the Indian Ocean. British rule in Kenya lasted for nearly 70 years between 1895 and 1963. Their style of governance their approach to land acquisition ownership, use and management their philosophy and patterns of wildlife conservation In 1907, the Game Department was established and charged with the responsibility of enforcing game laws and protecting the reserves.
+                    <input class= "execSubmit addBorderRadius " type= "submit " value= "Log In ">
+
+                </form>
+            </div>
+            <div class= "registerFrm hideOverflow whiteColor hide_stuff ">
+                <form class= "usrRegister ">
+                    <label>Name</label><br>
+                    <input class= "execInput addBorderRadius featureIdInput " type= "text " placeholder= "ID002 " required= " "><br>
+                    <label>Password</label><br>
+                    <input class= "execInput addBorderRadius featureIdInput " type= "password " placeholder= "****** " required= " "><br>
+                    <input class= "execSubmit addBorderRadius " type= "submit " value= "Sign Up ">
+                    <div class= "socialsContainer flex_stuff center_stuff spaceEven ">
+                        <div class= " instagramCard ">
+                            <img src= "./img/instagram.png " alt= " " title= "@silas.n_ " width= "30 " height= "30 ">
+                        </div>
+                        <div class= " facebookCard ">
+                            <img src= "./img/facebook.png " alt= " " title= "@silas.dopelimitlesity " width= "30 " height= "30 ">
+                        </div>
+                        <div class= " githubCard ">
+                            <img src= "./img/git.png " alt= " " title= "@greatsilas23 " width= "30 " height= "30 ">
+                        </div>
+                        <div class= " linkedInCard ">
+                            <img src= "./img/in.png " alt= " " title= "@silas-nyamwange-042761228 " width= "30 " height= "30 ">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 3. SIDEBAR -->
+        <div class= "flex_stuff vertic sideBar sidebarStickyDiv greenColor hide_stuff hideOverflow ">
+            <center>
+                <img class= "changeColor " src= "./img/icon.png " alt= "icon " width= "70 " height= "70 ">
+            </center>
+            <div><hr></div>
+            <div class= "homeLinkSideBar ">
+                <center>
+                    <img src= "./img/basic_home.svg " alt= "agripay " title= "HOME " width= "50 " height= "50 ">
+                </center>
+            </div>
+            <div class= "aboutLinkSideBar ">
+                <center>
+                    <img src= "./img/basic_info.svg " alt= "agripay " title= "ABOUT " width= "50 " height= "50 ">
+                </center>
+            </div>
+            <div class= "feedbackLinkSideBar ">
+                <center>
+                    <img src= "./img/basic_share.svg " alt= "agripay " title= "FEEDBACK " width= "50 " height= "50 ">
+                </center>
+            </div>
+        </div>
+        <!--HIDDEN DIVS CLOSE-->
+        <div class= "main_background ">
+            <div class= "portfolioText ">
+                <center>
+                    <h1>Library-Ideology</h1>
+                    <img src= "./img/icon.png " alt= "icon " width= "70 " height= "70 ">
+			<center>
+                <h2> Library-Ideology © copyright 2023 is an upcoming service that connects our clients with suppliers from allover the world</h2>
+<div id="termsandconditions" style="overflow-y: scroll;">
+
+
+
+
+Library-Ideology 
+Library-Ideology is an online Ecommerce platform
 
 Policy
 Introduction
 Service Provider
-These terms are between you and Book MS
+These terms are between you and Library-Ideology
 
 Age and eligibility requirements
-In order to use the Book MS and access any content you need to be 13 years of age (or equivalent minimum age in your country) or older, have parental or guardian consent if you are a minor in your home country, have the power to enter into a binding contract with us and not be barred from doing so under any applicable laws, reside in a country where the service is available
+In order to use the Library-Ideology and access any content you need to be 13 years of age (or equivalent minimum age in your country) or older, have parental or guardian consent if you are a minor in your home country, have the power to enter into a binding contract with us and not be barred from doing so under any applicable laws, reside in a country where the service is available
 
-Book MS Provided By Us
-Book MS Options
-We provide numerous Book MS Options
+Library-Ideology Provided By Us
+Library-Ideology Options
+We provide numerous Library-Ideology Options
 
 Trials
 From time to time we or others on our behalf may offer trials of paid subscription for a specified period without payment or at a reduced rate Third Party Applications, Devices and Open Source Software
 
 Third-Party Applications, Devices And Open Source Software
-The Book MS may be integrated with, or may otherwise interact with third party applications websites and services and third-party personal computers and mobile handsets tablets wearable devices speakers and other devices
+The Library-Ideology may be integrated with, or may otherwise interact with third party applications websites and services and third-party personal computers and mobile handsets tablets wearable devices speakers and other devices
 
 Service Limitations and Modifications
-We use reasonable Care and skill to keep the Book MS operational
+We use reasonable Care and skill to keep the Library-Ideology operational
 
-Your Use of The Book MS
-Creating a Book MS account
-You may need to create a Book MS Account to use
+Your Use of The Library-Ideology
+Creating a Library-Ideology account
+You may need to create a Agristores-technologies Account to use
 
-Your rights to use the Book MS
-Access to Book MS
-Subject to your compliance with these Terms, we grant you limited, non-exclusive, revocable permission to make personal non-commercial use of the Book MS and the Content
+Your rights to use the Library-Ideology
+Access to Library-Ideology
+Subject to your compliance with these Terms, we grant you limited, non-exclusive, revocable permission to make personal non-commercial use of the Library-Ideology and the Content
 
-Book MS's proprietary rights
-The Book MS and the content are the property of Book MS or Book MS's licensors
+Library-Ideology's proprietary rights
+The Library-Ideology and the content are the property of Library-Ideology or Library-Ideology's licensors
 
 Payments and cancellation
-You may purchase a Paid Subscription directly from Book MS or through a third party by Paying
-          
-	    </body>
-	<script type="text/javascript">
-/** @Author: 
-  * @Date: Mon 2 Oct 2023 11:11:00 +0300
-  * @LastModifiedBy: greatsilas23
-  * @LastModifiedDate: Mon 2 Oct 2023 12:09:00 +0300
-  */
-const pixel = 20
-class Tuple{
-constructor(backgroundColor, border, height, left, position, top, width, zIndex){
-this.tuple = '<div>'.concat('<section style="background-color: ').concat(backgroundColor).concat('; border: solid ').concat(border).concat('px black; height: ').concat(height).concat('vh; left: ').concat(left).concat('vw; position: ').concat(position).concat('; top: ').concat(top).concat('vh; width: ').concat('vw; z-index: ').concat(zIndex).concat(';" id="').concat(new Set().id).concat('" class="avatarMoveLeft avatarMoveRight avatarJump">').concat('</div>')
-}
-getTuple(){
-let result 
-this.tuple != null ? result = this.tuple : result = null
-return result
-}
-setTuple( backgroundColor, border, height, left, position, top, width, zIndex) {
-let result
-result = '<div>'.concat('<section style="background-color: ').concat(backgroundColor).concat('; border: solid ').concat(border).concat('px black; height: ').concat(height).concat('vh; left: ').concat(left).concat('vw; position: ').concat(position).concat('; top: ').concat(top).concat('vh; width: ').concat('vw; z-index: ').concat(zIndex).concat(';" id="').concat(new Set().id).concat('" class="avatarMoveLeft avatarMoveRight avatarJump">').concat('</div>')
+You may purchase a Paid Subscription directly from Library-Ideology or through a third party by Paying
 
-return result
-}
-}
-class Set{
-constructor(){
-this.id = 1
-this.name = 'avatar01'
-this.description = 'avatar'
-this.set = null
-}
-}
+</div>
 
-class Avatar extends Set{
-constructor(){
-super()
-this.avatar = null
-}
-isEmpty(){
-let result
-this.avatar != null ? result = false : result = true
+            </center>
+                </center>
+            </div>
+        </div>
+        
+        <div class= "separator_element flex_stuff center_stuff ">
+            <h2>TOP SELLING</h2>
+        </div>
 
-return result
-}
-peek(){
-let result 
-isEmpty() ? result = null : result = this.arr[11]
+        <div class= "tabbed_menu_container flex_stuff center_stuff ">
+	<div class= "card_container flex_stuff horiz ">
 
-return result
+            <div class= "card ">
+                <img class= "img_stuff " src= "./img/pepper.jpg " alt= "profile " width= "157 " height= "130 " align= "middle ">
+		<center>                
+		<p>KES 100</p>
+		<img src= "./img/cart.jpg " alt= "icon " width= "40 " height= "40 ">
+		<img src= "./img/wishlist.png " alt= "icon " width= "40 " height= "40 ">
+		</center>
+            </div>
+            <div class= "card ">
+                <img class= "img_stuff " src= "./img/brocolli.png " alt= "profile " width= "157 " height= "130 ">
+		<center>                
+		<p>KES 100</p>
+		<img src= "./img/cart.jpg " alt= "icon " width= "40 " height= "40 ">
+		<img src= "./img/wishlist.png " alt= "icon " width= "40 " height= "40 ">
+		</center>
+            </div>
+            <div class= "card ">
+                <img class= "img_stuff " src= "./img/tomato.jpg " alt= "profile " width= "157 " height= "130 ">
+		<center>                
+		<p>KES 100</p>
+		<img src= "./img/cart.jpg " alt= "icon " width= "40 " height= "40 ">
+		<img src= "./img/wishlist.png " alt= "icon " width= "40 " height= "40 ">
+		</center>
+            </div>
+            <div class= "card ">
+                <img class= "img_stuff " src= "./img/onion.jpg " alt= "profile " width= "157 " height= "130 ">
+		<center>                
+		<p>KES 100</p>
+		<img src= "./img/cart.jpg " alt= "icon " width= "40 " height= "40 ">
+		<img src= "./img/wishlist.png " alt= "icon " width= "40 " height= "40 ">
+		</center>
+            </div>
+            <div class= "card ">
+                <img class= "img_stuff " src= "./img/concombre.jpg " alt= "profile " width= "157 " height= "130 ">
+		<center>                
+		<p>KES 100</p>
+<div onclick=""
+		<img src= "./img/cart.jpg " alt= "icon " width= "40 " height= "40 ">
+		<img src= "./img/wishlist.png " alt= "icon " width= "40 " height= "40 ">
+		</center>
+            </div>
+	</div>    
+	
 
-}
+        <div class= "separator_element ">
+            <center>
+                <h2>FEEDBACK</h2>
+            </center>
+        </div>
+        <div class= "contact_support flex_stuff center_stuff ">
+            <div class= "socialsContainer flex_stuff center_stuff spaceEven ">
+                <div class= " instagramCard ">
+                    <img src= "./img/instagram.png " alt= " " title= "@silas.n_ " width= "50 " height= "50 ">
+                </div>
+                <div class= " facebookCard ">
+                    <img src= "./img/facebook.png " alt= " " title= "@silas.dopelimitlesity " width= "50 " height= "50 ">
+                </div>
+                <div class= " githubCard ">
+                    <img src= "./img/git.png " alt= " " title= "@greatsilas23 " width= "50 " height= "50 ">
+                </div>
+                <div class= " linkedInCard ">
+                    <img src= "./img/in.png " alt= " " title= "@silas-nyamwange-042761228 " width= "50 " height= "50 ">
+                </div>
+            </div>
+        </div>
+        <div class= "companyInfo flex_stuff center_stuff ">
+            <h2>copyright © nyamwas 2023</h2>
+        </div>
+    
+    </body>
+    <script type="text/javascript">
 
-pop(val){
-let result 
-isEmpty() ? result = null : result = this.arr.filter((items) => items !== val)
-
-return result
-}
-draw(avatarItem){
-let result 
-!isEmpty() ? () => {
-for(let i = 0; i <= this.arr.length - 1; i=i + 1){
-for(let k = 0; k <= this.arr[i].length - 1; k = k + 1){
-switch(parseInt(avatarItem[i][k])){
-case 0:
-result = result.concat(new Tuple('green',  2, pixel, k,'absolute', i, pixel, i).getTuple())
-break
-case 1:
-result = result.concat(new Tuple('black', 2, pixel, k, 'absolute', i, pixel, i).getTuple())
-break
-case 2:
-result = result.concat(new Tuple('grey',2,pixel,k,'absolute',i, pixel,i).getTuple())
-break
-case 3:
-result = result.concat(new Tuple('white', 2,pixel,k, 'absolute', i, pixel, i).getTuple())
-break
-case 4:
-result = result.concat(new Tuple('red',2,pixel,k, 'absolute',i,pixel,i).getTuple())
-break
-default:
-result = null
-break
-}
-}
-}
-
-} : result = null
-
-this.avatar = result
-return result
-}
-update(backgroundColor, border, height, left, position, top, width, zIndex){
-let result 
-result = null
-
-this.avatar = result
-return result
-}
-}
+    </script>	    
+</html>
 
 
-document.querySelector('body').innerHTML+= new Avatar().draw( [[0,1,1,1,1,1,1,1,0],
-[1,1,1,1,1,1,1,1,1],
-[2,2,2,2,2,2,2,2,2],
-[2,1,1,2,2,2,1,1,2],
-[2,2,2,2,2,2,2,2,2],
-[2,2,2,2,2,2,2,2,2],
-[2,3,1,3,2,3,1,3,2],
-[2,2,2,2,2,2,2,2,2],
-[2,2,4,4,4,4,4,2,2],
-[2,2,4,3,3,3,4,2,2],
-[0,2,4,3,3,3,4,2,0],
-[0,0,4,4,4,4,4,0,0]] )
 
-console.log('draw')
 
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script type="text/javascript">
+        $('header').style.width = '70vw' 
+
+        $('header').style.position = 'sticky '
+        $('header').style.top = '2vh'
+        $('nav').style.width = '55vw'
+
+
+        $('nav').style.float = 'left'
+        $('nav').style.position = 'absolute'
+        $('nav').style.top = '22vh'
+        $('aside').style.width = '15vw'
+        $('aside').style.position = 'sticky' 
+
+        $('aside').style.top = '22vh'
+
+        $('aside').style.float = 'right'
+        $('section').style.width = '55vw'
+
+
+        $('section').style.position = 'relative'
+
+
+        $('section').style.top = '40vh'
+      </script>
+
   </html>
 
+
+         
+     </script>
+
+
+       
+    
+
+
+
+
+
+
+
+
+  <link rel="icon" href="./resources/logo.jpg "/>
+  <title>health-inventory-app</title>
+</head>
+<body>
+   <header>
+	<img alt="hamburger"/>
+	<img alt="cart" />
+   </header>
+   <navigation class="navigation">
+     <a href="index.html"><img src="./resources/home.png" width="40" height="40" alt="login"/></a>
+     <a href="checkout.html"><img src="./resources/cart.png" width="40" height="40" alt="cart"/></a>
+     <a href="billing.html"><img src="./resources/bill.png" width="40" height="40" alt="bill "/></a>
+     <a href="login.html"><img src="./resources/login.png" width="40" height="40" alt="login"</a>
+   </navigation>
+   <section>
+	<div>
+		<section>
+			<img alt="item"/>
+		</section>
+		<section>
+			<input type="image"/>
+			<imput type="image"/>
+		</section>
+	</div>
+   </section>
+   <footer>
+    <span> greatsilas23 </span> &copy; <span> 2021</span>
+  </footer>
+</body>
+<script>
+
+const item = fetch('./index.json').then(function (res) {
+  return res.json() 
+  }).then(function (res) {
+    console.log(res)
+  }
+})   
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
+
+
+>>>>>>> d4a44fdcf0ed3b402a5a51450008ad6832470434
